@@ -42,14 +42,14 @@ public class RegisterUser extends HttpServlet {
 		else if (action.equals("done")) {
 			// セッションスコープに保存された登録ユーザーを取得
 			HttpSession session = request.getSession();
-			User registerUser = (User) session.getAttribute("registerUser");
+			User se_registerUser = (User) session.getAttribute("registerUser");
 
 			// 応用：セッションの内容をリクエストスコープ内に保存
-			request.setAttribute("registerUser", registerUser);
+			request.setAttribute("registerUser", se_registerUser);
 
 			// 登録処理呼び出し
 			RegisterUserLogic logic = new RegisterUserLogic();
-			logic.execute(registerUser);
+			logic.execute(se_registerUser);
 
 			// 不要なセッションの破棄
 			session.removeAttribute("registerUser");
