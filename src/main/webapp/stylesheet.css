@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+h1{
+	text-align: center;
+	margin: 30px;
+}
+
+.t1{
+	border: 0px;
+	border-color: #fff;
+	margin: auto;
+	background-color: gray;
+}
+
+td{
+	width: 50px;
+	height: 50px;
+}
+
+td.result{
+	width: 50px;
+	height: 50px;
+	font-size: 30px;
+	text-align: center;
+	background-color: white;
+}
+
+select{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	
+	width: 50px;
+	height: 50px;
+	font-size: 40px;
+	text-align: center;
+
+}
+
+select:hover{
+	background-color: gray;
+}
+
+select::-ms-expand{
+display: none;
+}
+
+.submit{
+	text-align: center;
+}
